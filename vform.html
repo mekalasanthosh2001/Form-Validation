@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation Project</title>
+    <link rel="stylesheet" href="./vform.css" />
+  </head>
+  <body>
+    <div class="container" id="continers">
+      <h1>Form Validation</h1>
+      <div class="form-container" id="p0">
+        <h3>Sign Up</h3>
+
+        <form action="" class="form-elemenets" id="form">
+          <div class="one">
+            <label for="" style="display:flex ; gap: 3px;">Frist Name <sup style="color: red; font-size: 14px;"> &#42</span></label>
+            <input type="text" placeholder=" Frist Name" id="name" />
+          </div>
+
+          <div class="one">
+            <label for="" >Second Name</label>
+            <input type="text" placeholder=" Second Name" id="name2" />
+          </div>
+
+          <div class="one"style="display:flex ; gap: 3px;">
+            <label for="">Gmail <sup style="color: red; font-size: 14px;"> &#42</span></label>
+            <input
+              type="email"
+              placeholder="@gmail.com"
+              id="email"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="one" style="display:flex ; gap: 3px;">
+            <label for="">Mobile <sup style="color: red; font-size: 14px;"> &#42</span></label>
+            <input type="tel" placeholder="+91*******22" id="phone" />
+          </div>
+
+          <div class="one" style="display:flex ; gap: 3px;">
+            <label for="">Password <sup style="color: red; font-size: 14px;"> &#42</span></label>
+            <input type="password" placeholder="Enter Password" id="password" />
+          </div>
+
+          <div class="one" style="display:flex ; gap: 3px;">
+            <label for="">ReEnter Password <sup style="color: red; font-size: 14px;"> &#42</span></label>
+            <input
+              type="password"
+              placeholder="Re Enter Password"
+              id="repassword"
+            />
+
+           
+          </div>
+          <div class="peraback">
+            <p>Already have an account? <a href="login.html" id="login" style="color:rgb(240, 13, 13); font-weight: 600; text-decoration: none; font-size: 17px;" > Login </a>   </p>
+          </div>
+          <div class="form-buttons">
+            <button class="btn-submit" id="btnsubmit" >Submit</button>
+          </div>
+        </form>
+      </div>
+</div>
+      
+    <script src="./vform.js">
+    
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+  </head>
+  <link rel="stylesheet" href="./vform.css" />
+  <style></style>
+
+  <body>
+    <div class="container">
+      <h1>Login Validation</h1>
+      <div class="form-container">
+        <h3>Login</h3>
+        <div class="form-elemenets">
+          <div class="one">
+            <label for="">Enter id</label>
+            <input type="email" placeholder="enter email" id="getid" />
+          </div>
+          <div class="one">
+            <label for="">Password</label>
+            <input type="password" placeholder="enter pasword" id="getpsw" />
+          </div>
+          <div class="peraback">
+            <p>
+              Don't have an account?
+              <a
+                href="vform.html"
+                id="login"
+                style="
+                  color: orangered;
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 17px;
+                "
+              >
+                Sign Up
+              </a>
+            </p>
+          </div>
+          <div class="form-buttons">
+            <button id="#link" onclick="clickfunction()" class="btn-submit">
+              submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function clickfunction() {
+        var getidgetid = document.getElementById("getid").value;
+        var getpswgetpsw = document.getElementById("getpsw").value;
+        // alert("welcome");
+        if (getidgetid && getpswgetpsw) {
+          letlocaltorageData = localStorage.getItem("email");
+          if (letlocaltorageData) {
+            letlocaltorageData = JSON.parse(letlocaltorageData);
+            if (
+              getidgetid === letlocaltorageData.emailvalue &&
+              getpswgetpsw === letlocaltorageData.passwordvalue
+            ) {
+              window.location.href = "loginsuccess.html";
+            } else {
+              alert("incorrect details");
+            }
+            // alert("avakiable");
+          } else {
+            alert("please Sign Up first, and Login");
+          }
+        } else {
+          alert("Please enter all details");
+        }
+      }
+    </script>
+  </body>
+</html>
