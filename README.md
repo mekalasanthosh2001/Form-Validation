@@ -23,6 +23,7 @@ Redirects authenticated users to an access page upon successful login.
 HTML: Defines the structure of the signup and login forms.
 CSS: Styles the forms for a visually appealing user interface.
 JavaScript: Implements client-side validation logic for form inputs and form submission behavior.
+
 Sign Up form:__
 ![image](https://github.com/mekalasanthosh2001/Form-Validation/assets/104013993/7730fa27-3a90-44e7-8ba2-895b5083a692)
 Login form:__
